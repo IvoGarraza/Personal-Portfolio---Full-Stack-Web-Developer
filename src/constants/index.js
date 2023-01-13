@@ -2,19 +2,34 @@ import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,ve
 
 export const skills = [
     {
-        id: "react",
-        title: "React",
-        img: react
+        id:"html",
+        title:"HTML",
+        img:html
     },
     {
-        id:"aftereffects",
-        title:"After Effects",
-        img: aftereffects
+        id:"css",
+        title: "CSS",
+        img:css
     },
     {
         id:"javascript",
         title: "Javascript",
         img:javascript
+    },
+    {
+        id: "react",
+        title: "React.Js",
+        img: react
+    },
+    {
+        id:"tailwind",
+        title:"TailwindCSS",
+        img:tailwind
+    },
+    {
+        id:"aftereffects",
+        title:"After Effects",
+        img: aftereffects
     },
     {
         id:"photoshop",
@@ -25,21 +40,6 @@ export const skills = [
         id:"mysql",
         title: "MySQL",
         img:mysql
-    },
-    {
-        id:"css",
-        title: "CSS",
-        img:css
-    },
-    {
-        id:"tailwind",
-        title:"TailwindCSS",
-        img:tailwind
-    },
-    {
-        id:"html",
-        title:"HTML",
-        img:html
     },
     {
         id:"vegas",

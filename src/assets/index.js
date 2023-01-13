@@ -7,6 +7,7 @@ import photoshop from './photoshop.png'
 import vegas from './vegas.png'
 import aftereffects from './aftereffects.png'
 import tailwind from './tailwind.png'
+import avatar from './avatar_default.png'
 
 export {
     react,
@@ -17,5 +18,6 @@ export {
     photoshop,
     vegas,
     aftereffects,
-    tailwind
+    tailwind,
+    avatar
 }
