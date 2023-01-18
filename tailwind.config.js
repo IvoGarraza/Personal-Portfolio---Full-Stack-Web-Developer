@@ -10,7 +10,7 @@ module.exports = {
         'port__gray':'#393E46',
         'port__blue': '#00ADB5',
         'port__white':'#EEEEEE'
-      }
+      }, 
     },
   },
   plugins: [],

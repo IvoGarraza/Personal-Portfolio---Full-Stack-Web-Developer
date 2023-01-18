@@ -7,15 +7,18 @@ const Navbar = () => {
           <h1 className='m-5 font-bold font-xl text-white'>Ivo Garraza</h1>
         </div>
         <div className='m-5 mr-1 flex flex-row '>
-            <div className='flex items-center justify-center mr-5 w-[100px] h-10 bg-port__gray border-2 border-white text-white rounded-full  hover:bg-port__blue hover:text-black'>
-              <a className='font-semibold'>Projects</a>
-            </div>
-            <div className='flex items-center justify-center mr-5 w-[100px] h-10 bg-port__gray border-2 border-white text-white rounded-full hover:bg-port__blue hover:text-black'>
-              <a className='font-semibold'>About me</a>
-            </div>
-            <div className='flex items-center justify-center mr-5 w-[100px] h-10 bg-port__gray border-2 border-white text-white rounded-full hover:bg-port__blue hover:text-black'>
-              <a className='font-semibold'href='https://wa.me/+5493562408275?text=Hi, I´m writing to you from your web portfolio...'>Contact</a>
-            </div>
+            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+              <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-white group-hover:text-white">About me</span>
+            </button>
+            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+              <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-white group-hover:text-white">Projects</span>
+            </button>
+            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+              <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+              <span class="relative text-white group-hover:text-white">Contact</span>
+            </button>
         </div>
     </div>
   )

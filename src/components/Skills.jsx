@@ -17,7 +17,7 @@ function Skills() {
             <button>Backend</button>
             <button>Desing</button>
         </div>
-        <div className='grid grid-cols-4 grid-flow-row gap-4 justify-center content-center' data-aos="fade-up">
+        <div className='grid grid-cols-4 grid-flow-row gap-4 justify-center content-center'>
             {skills.map((skill)=>(
                 <Card title={skill.title} img={skill.img} ></Card>
             ))}
