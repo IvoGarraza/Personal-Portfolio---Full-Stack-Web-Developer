@@ -18,7 +18,8 @@ function Skills() {
             <button>Desing</button>
         </div>
         <div className='grid grid-cols-4 grid-flow-row gap-4 justify-center content-center'>
-            {skills.map((skill)=>(
+            {skills.map((skill, index)=>(
+              
                 <Card title={skill.title} img={skill.img} ></Card>
             ))}
         </div>
