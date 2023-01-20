@@ -1,4 +1,5 @@
 import React from 'react'
+import Buttons from './Buttons'
 
 const Navbar = () => {
   return (
@@ -7,10 +8,11 @@ const Navbar = () => {
           <h1 className='m-5 font-bold font-xl text-white'>Ivo Garraza</h1>
         </div>
         <div className='m-5 mr-1 flex flex-row '>
-            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+{/*             <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">About me</span>
-            </button>
+            </button> */}
+            <Buttons title='About me' id='orang'></Buttons>
             <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">Projects</span>

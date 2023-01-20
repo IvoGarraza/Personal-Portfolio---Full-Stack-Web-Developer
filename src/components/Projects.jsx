@@ -5,7 +5,7 @@ import CardProject from "./CardProject";
 
 const Projects = () => {
   return (
-    <div className="bg-port__black my-10 w-[100%] h-[180vh] flex flex-row">
+    <div id='projects' className="bg-port__black my-10 w-[100%] h-[180vh] flex flex-row">
       <div className=" p-10 h-[100%] w-[50%] items-center flex flex-col justify-center">
         <p className={styles.heading2}>
           Meet my projects personal & <br />
