@@ -20,7 +20,7 @@ function Skills() {
         <div className='grid grid-cols-4 grid-flow-row gap-4 justify-center content-center'>
             {skills.map((skill, index)=>(
               
-                <Card title={skill.title} img={skill.img} ></Card>
+                <Card title={skill.title} img={skill.img} color={skill.color} ></Card>
             ))}
         </div>
     </div>

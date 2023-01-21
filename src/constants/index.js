@@ -4,12 +4,14 @@ export const skills = [
     {
         id:"html",
         title:"HTML",
-        img:html
+        img:html,
+        color:'#F5E023'
     },
     {
         id:"css",
         title: "CSS",
-        img:css
+        img:css,
+        color:'#0C1AF5'
     },
     {
         id:"javascript",

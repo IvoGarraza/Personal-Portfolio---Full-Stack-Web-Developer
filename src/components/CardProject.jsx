@@ -32,8 +32,15 @@ const CardProject = (props) => {
 						<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
 						<p class="text-xs">{props.time}</p>
 					</div>
+					<div class='button w-20 h-8 bg-blue-500 rounded-lg cursor-pointer select-none
+								active:translate-y-2  active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841]
+								active:border-b-[0px]
+								transition-all duration-150 [box-shadow:0_5px_0_0_#1b6ff8,0_10px_0_0_#1b70f841]
+								border-b-[1px] border-blue-400'>
+						<span class='flex flex-col justify-center items-center h-full text-white font-bold text-xs '>Read more</span>
 					</div>
 				</div>
+			</div>
 		</div>
 	</div>
 
