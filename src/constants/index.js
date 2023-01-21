@@ -5,48 +5,54 @@ export const skills = [
         id:"html",
         title:"HTML",
         img:html,
-        color:'#F5E023'
+        color:'border-b-[#ED530C]'
     },
     {
         id:"css",
         title: "CSS",
         img:css,
-        color:'#0C1AF5'
+        color:'border-b-[#0C57E0]'
     },
     {
         id:"javascript",
         title: "Javascript",
-        img:javascript
+        img:javascript,
+        color: 'border-b-[#EDC00C]'
     },
     {
         id: "react",
         title: "React.Js",
-        img: react
+        img: react,
     },
     {
         id:"tailwind",
         title:"TailwindCSS",
-        img:tailwind
+        img:tailwind,
+
     },
     {
         id:"aftereffects",
         title:"After Effects",
-        img: aftereffects
+        img: aftereffects,
+        color: 'border-b-[#546DF7]'
     },
     {
         id:"photoshop",
         title:"Adobe Photoshop",
-        img:photoshop
+        img:photoshop,
+        color:'border-b-[#00BDED]'
     },
     {
         id:"mysql",
         title: "MySQL",
-        img:mysql
+        img:mysql,
+        color:'border-b-[#E08900]'
     },
     {
         id:"vegas",
         title:"Sony Vegas",
-        img:vegas
+        img:vegas,
+        color:'border-b-[#009BE6]'
     }
 ]
 
