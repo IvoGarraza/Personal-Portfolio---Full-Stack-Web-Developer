@@ -10,6 +10,9 @@ import tailwind from './tailwind.png'
 import avatar from './avatar_default.png'
 import imgCard from './stockCard.png'
 import foto from './foto perfil.jpg'
+import github from './github.png'
+import wsp from './wsp.png'
+import mail from './mail.png'
 
 export {
     react,
@@ -23,5 +26,8 @@ export {
     tailwind,
     avatar,
     imgCard,
-    foto
+    foto,
+    github,
+    wsp,
+    mail
 }

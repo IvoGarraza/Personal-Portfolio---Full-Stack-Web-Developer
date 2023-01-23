@@ -1,4 +1,4 @@
-import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto} from '../assets'
+import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github} from '../assets'
 
 export const skills = [
     {
@@ -117,5 +117,23 @@ export const projects = [
         avatar:foto,
         time:'18/01/2022'
 
+    }
+]
+
+export const contact = [
+    {
+        id:'github',
+        title:'Github',
+        img:github
+    },
+    {
+        id:'wsp',
+        title:'Whatsapp',
+        img:wsp
+    },
+    {
+        id:'mail',
+        title: 'Gmail',
+        img: mail
     }
 ]
