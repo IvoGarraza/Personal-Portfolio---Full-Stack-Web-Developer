@@ -1,5 +1,6 @@
 import React from "react";
 import { contact } from "../constants";
+import styles from "../constants/styles";
 
 const Contact = () => {
   return (
@@ -13,23 +14,25 @@ const Contact = () => {
           </div>
           <div className="flex flex-row m-2 justify-between ">
             {contact.map((red) => (
-              <div className="flex flex-col justify-between w-[150px] h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
-                <div></div>
-                <div className="flex justify-center ">
-                  <img className="flex w-[48px] h-[48px]" src={red.img} />
+              <a href={red.link}>
+                <div className="flex flex-col justify-between w-[150px] h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
+                  <div></div>
+                  <div className="flex justify-center ">
+                    <img className="flex w-[48px] h-[48px]" src={red.img} />
+                  </div>
+                  <h3 className="flex text-[20px] text-black font-bold justify-center">
+                    {red.title}
+                  </h3>
                 </div>
-                <h3 className="flex text-[20px] text-black font-bold justify-center">
-                  {red.title}
-                </h3>
-              </div>
+              </a>
             ))}
           </div>
           <div></div>
         </div>
         
         <div>
-          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-slate-300 rounded-2xl">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-black">
+          <div class="py-8 lg:py-16 px-10 mx-auto max-w-screen-md bg-slate-300 rounded-2xl">
+            <h2 class={`${styles.heading2} text-black`}>
               Contact Us
             </h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
@@ -83,7 +86,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-orange-500	 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
                 Send message
               </button>

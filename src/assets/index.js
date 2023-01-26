@@ -13,6 +13,7 @@ import foto from './foto perfil.jpg'
 import github from './github.png'
 import wsp from './wsp.png'
 import mail from './mail.png'
+import download from './download.png'
 
 export {
     react,

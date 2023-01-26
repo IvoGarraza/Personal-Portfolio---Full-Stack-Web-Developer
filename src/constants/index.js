@@ -124,16 +124,19 @@ export const contact = [
     {
         id:'github',
         title:'Github',
-        img:github
+        img:github,
+        link:'https://github.com/IvoGarraza'
     },
     {
         id:'wsp',
         title:'Whatsapp',
-        img:wsp
+        img:wsp,
+        link:'https://wa.me/+5493562408275'
     },
     {
         id:'mail',
         title: 'Gmail',
-        img: mail
+        img: mail,
+        link:'mailto:ivogarrachip@gmail.com'
     }
 ]
