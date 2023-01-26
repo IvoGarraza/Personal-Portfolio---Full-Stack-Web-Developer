@@ -63,7 +63,8 @@ export const projects = [
         description:'A popular project site whit a all pokemons exist for now, this projects was realice in a bootcamp of web developer. In this project made a API REST & Front',
         img:imgCard,
         avatar:foto,
-        time:'18/01/2023'
+        time:'18/01/2023',
+        path:'/pokemon-page'
 
     },
     {
@@ -72,7 +73,8 @@ export const projects = [
         description:'Website simulation a site of a bank using the framework for CSS TailwindCSS',
         img:imgCard,
         avatar:foto,
-        time:'20/12/2022'
+        time:'20/12/2022',
+        path:'/bank'
     },
     {
         id:'gea',
@@ -80,7 +82,8 @@ export const projects = [
         description:'Website for a company of geotecnichal studies',
         img:imgCard,
         avatar:foto,
-        time:'20/11/2022'
+        time:'20/11/2022',
+        path:'/gea-web'
 
     },
     {
@@ -89,7 +92,8 @@ export const projects = [
         description: 'cybersecurity project, development of a rubber ducky with an Arduino UNO development board',
         img:imgCard,
         avatar:foto,
-        time:'17/07/2022'
+        time:'17/07/2022',
+        path:'/rubber-ducky-with-arduino'
 
     },
     {
@@ -98,7 +102,8 @@ export const projects = [
         description:'A simple Chrome extension that detects if a website is vulnerable to SQL Injection attacks',
         img:imgCard,
         avatar:foto,
-        time:'08/08/2022'
+        time:'08/08/2022',
+        path:'/chrome-extension-sqli'
 
     },
     {
@@ -107,7 +112,8 @@ export const projects = [
         description:'A simple Chrome extension that change the current page to dark mode, this extension arises after feeling eye strain from reading documentation for a long time',
         img:imgCard,
         avatar:foto,
-        time:'05/08/2022'
+        time:'05/08/2022',
+        path:'/chrome-extension-darkmode'
     },
     {
         id:'portfolio',
@@ -115,7 +121,8 @@ export const projects = [
         description:'Here you will find the code of this portfolio made whit React & TailwindCSS',
         img:imgCard,
         avatar:foto,
-        time:'18/01/2022'
+        time:'18/01/2022',
+        path:'/portfolio'
 
     }
 ]

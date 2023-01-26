@@ -5,12 +5,12 @@ import styles from "../constants/styles";
 const Contact = () => {
   return (
     <section className="w-[100%] flex flex-col items-center">
-      <div className="flex flex-row bg-slate-20 m-2 rounded-xl ">
+      <div className="flex flex-row bg-slate-20 my-2 rounded-xl ">
       
         <div className="flex flex-col justify-between">
           <div></div>
           <div className="m-10 flex justify-center">
-            <h2 className="text-[30px] font-bold">Contact me...</h2>
+            <h2 className="text-[30px] font-bold">My networks to contact me...</h2>
           </div>
           <div className="flex flex-row m-2 justify-between ">
             {contact.map((red) => (
@@ -33,7 +33,7 @@ const Contact = () => {
         <div>
           <div class="py-8 lg:py-16 px-10 mx-auto max-w-screen-md bg-slate-300 rounded-2xl">
             <h2 class={`${styles.heading2} text-black`}>
-              Contact Us
+            Or if you want me to contact you myself
             </h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
               Got a technical issue? Want to send feedback about a beta feature?
