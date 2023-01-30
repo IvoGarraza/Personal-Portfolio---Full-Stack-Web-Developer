@@ -1,6 +1,7 @@
 import React from "react";
 import { contact } from "../constants";
 import styles from "../constants/styles";
+import { motion  } from "framer-motion";
 
 const Contact = () => {
   return (
@@ -15,7 +16,8 @@ const Contact = () => {
           <div className="flex flex-row m-2 justify-between ">
             {contact.map((red) => (
               <a href={red.link}>
-                <div className="flex flex-col justify-between w-[150px] h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
+                <motion.div whileHover={{scale:1.1}} whileTap={{scale:0.9}}
+                 className="flex flex-col justify-between w-[150px] h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
                   <div></div>
                   <div className="flex justify-center ">
                     <img className="flex w-[48px] h-[48px]" src={red.img} />
@@ -23,7 +25,7 @@ const Contact = () => {
                   <h3 className="flex text-[20px] text-black font-bold justify-center">
                     {red.title}
                   </h3>
-                </div>
+                </motion.div>
               </a>
             ))}
           </div>
