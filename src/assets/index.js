@@ -14,6 +14,10 @@ import github from './github.png'
 import wsp from './wsp.png'
 import mail from './mail.png'
 import download from './download.png'
+import git from './git.png'
+import node from './node.png'
+import python from './python.png'
+import arduino from './arduino.png'
 
 export {
     react,
@@ -30,5 +34,9 @@ export {
     foto,
     github,
     wsp,
-    mail
+    mail,
+    git,
+    node,
+    python,
+    arduino
 }

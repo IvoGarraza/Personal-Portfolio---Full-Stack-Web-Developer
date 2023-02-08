@@ -1,8 +1,13 @@
 import React from 'react'
+import Modal from './animation-resorces/modal'
 
 const PokemonPage = () => {
   return (
-    <div>Pokemon</div>
+    <div className='w-[100%] h-[100%]'>
+      <Modal>
+        Hello world
+      </Modal>
+    </div>
   )
 }
 

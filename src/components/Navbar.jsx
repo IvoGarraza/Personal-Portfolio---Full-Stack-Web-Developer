@@ -13,11 +13,11 @@ const Navbar = () => {
               <span class="relative text-white group-hover:text-white">About me</span>
             </button> */}
             <Buttons title='About me' id='orange'></Buttons>
-            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-xl  bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">Projects</span>
             </button>
-            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-full border-[1px] bg-port__gray text-lg shadow">
+            <button class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-xl bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">Contact</span>
             </button>

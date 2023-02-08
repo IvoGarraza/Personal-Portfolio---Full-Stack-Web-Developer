@@ -1,4 +1,4 @@
-import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github} from '../assets'
+import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino} from '../assets'
 
 export const skills = [
     {
@@ -20,6 +20,12 @@ export const skills = [
         color: 'border-b-[#EDC00C]'
     },
     {
+        id:"node",
+        title:"Node.Js",
+        img:node,
+        color:'border-b-[#14B400]'
+    },
+    {
         id: "react",
         title: "React.Js",
         img: react,
@@ -30,11 +36,30 @@ export const skills = [
         img:tailwind,
 
     },
+
     {
-        id:"aftereffects",
-        title:"After Effects",
-        img: aftereffects,
-        color: 'border-b-[#546DF7]'
+        id:"mysql",
+        title: "MySQL",
+        img:mysql,
+        color:'border-b-[#E08900]'
+    },
+    {
+        id:"git",
+        title:"Git",
+        img:git,
+        color: 'border-b-[#FA4A0D]'
+    },
+    {
+        id:'python',
+        title:'Python',
+        img:python,
+        color:'border-b-[#FFDA08]'
+    },
+    {
+        id:"arduino",
+        title:"Arduino",
+        img: arduino,
+        color: 'border-b-[#08BABD]'
     },
     {
         id:"photoshop",
@@ -43,17 +68,12 @@ export const skills = [
         color:'border-b-[#00BDED]'
     },
     {
-        id:"mysql",
-        title: "MySQL",
-        img:mysql,
-        color:'border-b-[#E08900]'
-    },
-    {
         id:"vegas",
         title:"Sony Vegas",
         img:vegas,
         color:'border-b-[#009BE6]'
-    }
+    },
+
 ]
 
 export const projects = [
