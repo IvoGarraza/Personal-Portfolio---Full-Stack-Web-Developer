@@ -18,6 +18,7 @@ import git from './git.png'
 import node from './node.png'
 import python from './python.png'
 import arduino from './arduino.png'
+import info from './info.png'
 
 export {
     react,
@@ -38,5 +39,6 @@ export {
     git,
     node,
     python,
-    arduino
+    arduino,
+    info
 }

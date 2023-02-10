@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { avatar, foto } from '../assets'
 import AOS from 'aos'
 import styles from '../constants/styles'
+import TextSpan from './animation-resorces/TextSpan'
 
 const Hero = () => {
 
@@ -9,13 +10,21 @@ const Hero = () => {
     AOS.init()
   },[])
 
+  const texto = "Full Stack Web Developer".split("")
+
   return (
     <div className='flex items-center justify-center bg-[#F07B3F] h-[90vh]'>
-      <div className='flex flex-row-reverse items-center justify-between text-center w-[100%]'>
-        <img src={avatar} className='w-[256px] ml-[10%] rounded-full' data-aos='zoom-in'/>
-        <div className='ml-[5%] text-black'>
-          <h2 className={`${styles.heading2}`}>Welcome to my personal portfolio! <br/>I'm <span className='text-black'>Ivo Garraza</span>, Full Stack Web Developer</h2>
+      <div className='flex flex-row items-center justify-around w-[100%]'>
+        <div className='ml-[5%] text-black '>
+          <h2 className={`${styles.heading2}`}>Welcome to my personal portfolio! </h2> 
+          <span className='text-black text-2xl font-bold'><span className='text-white'>I'm</span> Ivo Garraza</span><br/>
+          {texto.map((letter,index)=>(
+            <TextSpan key={index}>
+              {letter === " "? "\u00A0" : letter}
+            </TextSpan>
+          ))}
         </div>
+        <img src={avatar} className='w-[256px]  rounded-full' data-aos='zoom-in'/>
       </div>   
     </div>
   )
