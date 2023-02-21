@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion, transform } from 'framer-motion'
 
-const TextSpan = ({children}) => {
+const TextSpan = ({children, size, weight, color}) => {
 
     const rubberBand = () =>{
         return{
@@ -17,7 +17,7 @@ const TextSpan = ({children}) => {
     }
 
   return (
-    <motion.span className='inline-block text-2xl' whileHover={() => rubberBand()}>
+    <motion.span className={`inline-block ${size} ${weight} ${color}`} whileHover={() => rubberBand()}>
         {children}
     </motion.span>
   )

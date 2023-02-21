@@ -3,6 +3,7 @@ import styles from "../constants/styles";
 import { projects } from "../constants";
 import CardProject from "./CardProject";
 import { Link } from "react-router-dom";
+import Card from "./Test";
 
 const Projects = () => {
   return (
@@ -42,14 +43,15 @@ const Projects = () => {
         </p>
         <div className="h-[90%]">
           {projects.slice(0, 4).map((project) => (
-            <CardProject
+    /*         <CardProject
               title={project.title}
               description={project.description}
               img={project.img}
               avatar={project.avatar}
               time={project.time}
               path={project.path}
-            ></CardProject>
+            ></CardProject> */
+            <Card title={project.title} description={project.description}></Card>
           ))}
         </div>
       </div>

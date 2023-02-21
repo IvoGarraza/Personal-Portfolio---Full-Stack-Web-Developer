@@ -11,15 +11,29 @@ const Hero = () => {
   },[])
 
   const texto = "Full Stack Web Developer".split("")
-
+  const title = "Welcome to my personal portfolio!".split("")
+  const name = "Ivo Garraza".split("")
   return (
-    <div className='flex items-center justify-center bg-[#F07B3F] h-[90vh]'>
+    <div className='flex items-center justify-center bg-[#1B262C] h-[90vh]'>
       <div className='flex flex-row items-center justify-around w-[100%]'>
         <div className='ml-[5%] text-black '>
-          <h2 className={`${styles.heading2}`}>Welcome to my personal portfolio! </h2> 
-          <span className='text-black text-2xl font-bold'><span className='text-white'>I'm</span> Ivo Garraza</span><br/>
+          {/* <h2 className={`${styles.heading2}`}>Welcome to my personal portfolio! </h2>  */}
+          {title.map((letter,index)=>(
+          <TextSpan key={index} size='text-4xl' weight='font-bold' color='text-white'>
+              {letter === " "? "\u00A0" : letter}
+            </TextSpan>
+          ))}
+          <br/>
+          <br/>
+          <span className='text-white text-2xl'>I'm </span>
+          {name.map((letter,index)=>(
+            <TextSpan key={index} size='text-2xl' weight='font-bold' color='text-white'>
+              {letter === " "? "\u00A0" : letter}
+            </TextSpan>
+          ))}
+          <br/>
           {texto.map((letter,index)=>(
-            <TextSpan key={index}>
+            <TextSpan key={index} size='text-2xl' weight='font-normal' color='text-white'>
               {letter === " "? "\u00A0" : letter}
             </TextSpan>
           ))}

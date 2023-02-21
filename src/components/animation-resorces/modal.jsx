@@ -22,7 +22,7 @@ const Modal = (props) => {
           }}>
             <motion.div className=''>
               <p>{props.children}</p>
-              <button onClick={props.handleClose}>Close</button>
+              <button onClick={props.handleClose} className='text-red-500'>X</button>
             </motion.div>
           </motion.div>
     </motion.div>
