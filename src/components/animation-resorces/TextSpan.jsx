@@ -17,7 +17,7 @@ const TextSpan = ({children, size, weight, color}) => {
     }
 
   return (
-    <motion.span className={`inline-block ${size} ${weight} ${color}`} whileHover={() => rubberBand()}>
+    <motion.span initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1}} className={`inline-block ${size} ${weight} ${color}`} whileHover={() => rubberBand()}>
         {children}
     </motion.span>
   )

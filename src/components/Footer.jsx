@@ -8,11 +8,11 @@ const Footer = () => {
             <h2 className='font-bold text-[20px]'>Ivo Garraza</h2>
         </div>
         <div className='flex flex-col items-center justify-center'>
-            <h2 className='font-bold text-[20px]'>Sections</h2>
+            <h2 className='font-bold text-[20px]'>Secciones</h2>
             <div className='flex flex-col my-5 items-center'>
-                <a className='my-1' href='#about'>About me</a>
-                <a className='my-1' href='#projects'>Projects</a>
-                <a className='my-1'href='#contact'>Contact</a>
+                <a className='my-1' href='#aboutme'>Sobre mi</a>
+                <a className='my-1' href='#projects'>Proyectos</a>
+                <a className='my-1'href='#contact'>Contacto</a>
             </div>
         </div>
         <div className='flex flex-col justify-center items-center'>

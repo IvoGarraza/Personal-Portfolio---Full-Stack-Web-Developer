@@ -5,16 +5,16 @@ import CardProject from "./CardProject";
 import { Link } from "react-router-dom";
 import Card from "./Test";
 
+
 const Projects = () => {
   return (
-    <div id='projects' className="bg-port__black my-10 w-[100%] h-[180vh] flex flex-row">
-      <div className=" p-10 h-[100%] w-[50%] items-center flex flex-col justify-center">
-        <p className={styles.heading2}>
-          Meet my personal projects & <br />
-          work made in this time how developer
+    <div id='projects' className="bg-port__black py-10 w-[100%] h-[180vh] pb-[300px] flex flex-col">
+      <div className=" p-10  mt-10 h-[20%] w-[100%%] items-center flex flex-col justify-center">
+        <p className={`${styles.heading2} text-center`}>
+          Conoce mis proyectos personales y<br />
+          trabajos realizados en mi tiempo como desarrollador
         </p>
-        {/* <button className='py-4 px-6 bg-port__blue font-poppins font-medium text-[18px] text-primary outline-none rounded-xl mt-10 hover:text-white'>Projects →</button> */}
-        <button class="btn group flex items-center bg-transparent p-2 px-6 text-xl font-poppins tracking-widest text-white mt-10">
+{/*         <button class="btn group flex items-center bg-transparent p-2 px-6 text-xl font-poppins tracking-widest text-white mt-10">
           <Link>
             <span class="relative pr-4 pb-1 text-white after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-blue-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
               All Projects
@@ -35,23 +35,15 @@ const Projects = () => {
               id="Path_10"
             ></path>
           </svg>
-        </button>
+        </button> */}
       </div>
-      <div className="w-[50%] m-5 flex flex-col text-center">
-        <p className={`flex-start ${styles.heading2} h-[10%]`}>
+      <div className="w-[100%] h-[100%] ">
+        {/* <p className={`flex-start ${styles.heading2} h-[10%]`}>
           Some of my works...
-        </p>
-        <div className="h-[90%]">
-          {projects.slice(0, 4).map((project) => (
-    /*         <CardProject
-              title={project.title}
-              description={project.description}
-              img={project.img}
-              avatar={project.avatar}
-              time={project.time}
-              path={project.path}
-            ></CardProject> */
-            <Card title={project.title} description={project.description}></Card>
+        </p> */}
+        <div className="h-[1000px] w-[100%] grid grid-cols-4 gap-1 justify-self-center self-center items-center text-center">
+          {projects.slice(0, 6).map((project) => (
+            <Card title={project.title} description={project.description} img={project.img}></Card>
           ))}
         </div>
       </div>
