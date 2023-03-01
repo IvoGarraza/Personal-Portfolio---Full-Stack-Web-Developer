@@ -43,7 +43,7 @@ const Projects = () => {
         </p> */}
         <div className="h-[1000px] w-[100%] grid grid-cols-4 gap-1 justify-self-center self-center items-center text-center">
           {projects.slice(0, 6).map((project) => (
-            <Card title={project.title} description={project.description} img={project.img}></Card>
+            <Card title={project.title} description={project.description} id={project.img} img={project.img} path={project.path}></Card>
           ))}
         </div>
       </div>

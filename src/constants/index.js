@@ -1,4 +1,5 @@
 import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino} from '../assets'
+import { games, hardware, machineLearning, musica } from '../assets/svg'
 
 export const skills = [
     {
@@ -81,17 +82,17 @@ export const projects = [
         id:'pokemon',
         title:'Pokemon Page',
         description:'A popular project site whit a all pokemons exist for now, this projects was realice in a bootcamp of web developer. In this project made a API REST & Front',
-        img:imgCard,
+        img:'bg-pokemon',
         avatar:foto,
         time:'18/01/2023',
         path:'/pokemon-page'
 
     },
     {
-        id:'bank',
+        id:'hoobank',
         title: 'Modern Website with TailwindCSS',
         description:'Website simulation a site of a bank using the framework for CSS TailwindCSS',
-        img:imgCard,
+        img:'bg-hoobank',
         avatar:foto,
         time:'20/12/2022',
         path:'/bank'
@@ -110,7 +111,7 @@ export const projects = [
         id:'ducky',
         title:'Rubber ducky with Arduino',
         description: 'cybersecurity project, development of a rubber ducky with an Arduino UNO development board',
-        img:imgCard,
+        img:'bg-ducky',
         avatar:foto,
         time:'17/07/2022',
         path:'/rubber-ducky-with-arduino'
@@ -120,7 +121,7 @@ export const projects = [
         id:'extension',
         title: 'Chrome extension, detection of websites vulnerable SQL Injection attacks',
         description:'A simple Chrome extension that detects if a website is vulnerable to SQL Injection attacks',
-        img:imgCard,
+        img:'bg-extension',
         avatar:foto,
         time:'08/08/2022',
         path:'/chrome-extension-sqli'
@@ -130,7 +131,7 @@ export const projects = [
         id:'darkmode',
         title: 'Chrome extension, switch a website in dark mode',
         description:'A simple Chrome extension that change the current page to dark mode, this extension arises after feeling eye strain from reading documentation for a long time',
-        img:imgCard,
+        img:'bg-extension',
         avatar:foto,
         time:'05/08/2022',
         path:'/chrome-extension-darkmode'
@@ -166,4 +167,27 @@ export const contact = [
         img: mail,
         link:'mailto:ivogarrachip@gmail.com'
     }
+]
+
+export const hobbies = [
+    {
+        id:'machine-learning',
+        title:'Machine Learning',
+        img:machineLearning
+    },
+    {
+        id:'hardware',
+        title:'Hardware General',
+        img:hardware
+    },
+    {
+        id:'music',
+        title:'Musica',
+        img: musica
+    },
+    {
+        id:'games',
+        title:'Videojuegos',
+        img: games
+    },
 ]
