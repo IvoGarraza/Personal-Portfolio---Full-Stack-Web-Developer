@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-[100%] flex flex-col items-center">
+    <section id="contact" className="w-[100%] flex flex-col items-center font-ubuntu">
       <div className="flex flex-row justify-around w-[100%] bg-slate-20 my-20 rounded-xl ">
         <div className="flex flex-col justify-around">
           <div></div>

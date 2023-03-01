@@ -12,7 +12,7 @@ function Skills() {
   const {scrollYProgress} = useScroll()
   
   return (
-    <div className="items-center text-center justify-center flex bg-slate-400 pb-20">
+    <div className="items-center text-center justify-center flex bg-slate-400 pb-20 font-ubuntu">
       <div className="rounded-xl flex flex-col items-center mt-[-40px] w-[90%] bg-white pb-10 shadow-xl">
         <h2 className=" h-[5%] m-5 font-poppins font-bold">Skills</h2>
         <div className={`w-[80%] mt-[3%] h-[3px] rounded-full absolute bg-slate-500`}></div>

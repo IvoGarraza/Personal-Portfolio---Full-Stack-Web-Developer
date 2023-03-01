@@ -89,9 +89,16 @@ export const projects = [
 
     },
     {
+        id:'countries',
+        title:'Countries Page',
+        description: 'Sitio web con todos los paises y descripciones de los mismos, realizado en el bootcamp de desarrollador web. En este proyecto se contruyo una API REST con node.js, para luego ser consumida y construir el frontend con React.js',
+        path:'/countries-page',
+        img:'bg-countries'
+    },
+    {
         id:'hoobank',
         title: 'Modern Website with TailwindCSS',
-        description:'Website simulation a site of a bank using the framework for CSS TailwindCSS',
+        description:'Sitio Web simulando ser la página de un banco. Programada con React.js y usando TailwindCSS, un framework para estilos de CSS',
         img:'bg-hoobank',
         avatar:foto,
         time:'20/12/2022',
@@ -109,8 +116,8 @@ export const projects = [
     },
     {
         id:'ducky',
-        title:'Rubber ducky with Arduino',
-        description: 'cybersecurity project, development of a rubber ducky with an Arduino UNO development board',
+        title:'Rubber Ducky with Arduino',
+        description: 'Proyecto de Ciberseguridad - Desarrollo de una unidad USB "Rubber Ducky" con una placa de desarrollo "Arduino UNO"',
         img:'bg-ducky',
         avatar:foto,
         time:'17/07/2022',
@@ -120,7 +127,7 @@ export const projects = [
     {
         id:'extension',
         title: 'Chrome extension, detection of websites vulnerable SQL Injection attacks',
-        description:'A simple Chrome extension that detects if a website is vulnerable to SQL Injection attacks',
+        description:'Extension de Google Chrome para detectar si un sitio web es vulnerable a ataques SQL Injection',
         img:'bg-extension',
         avatar:foto,
         time:'08/08/2022',
@@ -130,7 +137,7 @@ export const projects = [
     {
         id:'darkmode',
         title: 'Chrome extension, switch a website in dark mode',
-        description:'A simple Chrome extension that change the current page to dark mode, this extension arises after feeling eye strain from reading documentation for a long time',
+        description:'Simple extension de Google Chrome que cambia la pagina actual a "modo oscuro"',
         img:'bg-extension',
         avatar:foto,
         time:'05/08/2022',
@@ -139,7 +146,7 @@ export const projects = [
     {
         id:'portfolio',
         title: 'Portfolio Web Developer',
-        description:'Here you will find the code of this portfolio made whit React & TailwindCSS',
+        description:'Aca vas a poder encontrar el codigo de este mismo portafolio creado con React, TailwindCSS y Framer Motion',
         img:imgCard,
         avatar:foto,
         time:'18/01/2022',

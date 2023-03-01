@@ -3,7 +3,7 @@ import { contact } from '../constants'
 
 const Footer = () => {
   return (
-    <div className='flex flex-row justify-around h-[300px] mt-10 bg-port__black text-white rounded-t-xl'>
+    <div className='flex flex-row justify-around h-[300px] mt-10 bg-port__black text-white rounded-t-xl font-ubuntu'>
         <div className='flex items-center'>
             <h2 className='font-bold text-[20px]'>Ivo Garraza</h2>
         </div>

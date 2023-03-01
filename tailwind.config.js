@@ -15,7 +15,8 @@ module.exports = {
         'hoobank': "url('/src/assets/cardsImages/hoobank.png')",
         'ducky':"url('/src/assets/cardsImages/rubber-ducky.png')",
         'extension':"url('/src/assets/cardsImages/extension.jpg')",
-        'pokemon':"url('/src/assets/cardsImages/pokemon.jpg')"
+        'pokemon':"url('/src/assets/cardsImages/pokemon.jpg')",
+        'countries':"url('/src/assets/cardsImages/countries.jpg')"
       },
       fontFamily:{
         ubuntu:['Poppins', 'sans-serif']
