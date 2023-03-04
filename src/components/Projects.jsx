@@ -16,9 +16,9 @@ const Projects = () => {
         </p>
       </div>
       <div className="w-[100%] h-[100%] ">
-        <div className="h-[1000px] w-[100%] grid grid-cols-4 gap-1 justify-self-center self-center items-center text-center">
+        <div className="h-[1000px] w-[100%] grid xl:grid-cols-4 sm:grid-cols-1 gap-1 justify-self-center self-center items-center text-center ">
           {projects.slice(0, 8).map((project) => (
-            <Card title={project.title} description={project.description} id={project.img} img={project.img} path={project.path}></Card>
+            <Card title={project.title} description={project.description} id={project.img} img={project.img} path={project.path} link={project.link}></Card>
           ))}
         </div>
       </div>

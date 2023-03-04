@@ -8,6 +8,7 @@ import siete from './7.png'
 import ocho from './8.png'
 import nueve from './9.png'
 import diez from './10.png'
+import once from './11.png'
 
 
-export const stableDifussion = [uno,dos,tres,cuatro,cinco,seis,siete,ocho,nueve,diez]
+export const stableDifussion = [uno,dos,tres,cuatro,cinco,seis,siete,ocho,nueve,diez,once]

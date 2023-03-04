@@ -1,4 +1,4 @@
-import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino} from '../assets'
+import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino, framer} from '../assets'
 import { games, hardware, machineLearning, musica } from '../assets/svg'
 
 export const skills = [
@@ -37,7 +37,12 @@ export const skills = [
         img:tailwind,
 
     },
-
+    {
+        id:"framer",
+        title:"Framer Motion",
+        img:framer,
+        color:'border-b-[#009BE6]'
+    },
     {
         id:"mysql",
         title: "MySQL",
@@ -45,16 +50,16 @@ export const skills = [
         color:'border-b-[#E08900]'
     },
     {
-        id:"git",
-        title:"Git",
-        img:git,
-        color: 'border-b-[#FA4A0D]'
-    },
-    {
         id:'python',
         title:'Python',
         img:python,
         color:'border-b-[#FFDA08]'
+    },
+    {
+        id:"git",
+        title:"Git",
+        img:git,
+        color: 'border-b-[#FA4A0D]'
     },
     {
         id:"arduino",
@@ -67,12 +72,6 @@ export const skills = [
         title:"Adobe Photoshop",
         img:photoshop,
         color:'border-b-[#00BDED]'
-    },
-    {
-        id:"vegas",
-        title:"Sony Vegas",
-        img:vegas,
-        color:'border-b-[#009BE6]'
     },
 
 ]
@@ -108,7 +107,7 @@ export const projects = [
         id:'gea',
         title:'GEA',
         description:'Website for a company of geotecnichal studies',
-        img:imgCard,
+        img:'bg-gea',
         avatar:foto,
         time:'20/11/2022',
         path:'/gea-web'
@@ -126,7 +125,7 @@ export const projects = [
     },
     {
         id:'extension',
-        title: 'Chrome extension, detection of websites vulnerable SQL Injection attacks',
+        title: 'Chrome extension - Detector de vulnerabilidades SQL Injection',
         description:'Extension de Google Chrome para detectar si un sitio web es vulnerable a ataques SQL Injection',
         img:'bg-extension',
         avatar:foto,
@@ -136,7 +135,7 @@ export const projects = [
     },
     {
         id:'darkmode',
-        title: 'Chrome extension, switch a website in dark mode',
+        title: 'Chrome extension - Modo Oscuro',
         description:'Simple extension de Google Chrome que cambia la pagina actual a "modo oscuro"',
         img:'bg-extension',
         avatar:foto,
@@ -150,7 +149,7 @@ export const projects = [
         img:imgCard,
         avatar:foto,
         time:'18/01/2022',
-        path:'/portfolio'
+        link:'https://github.com/IvoGarraza/Personal-Portfolio---Full-Stack-Web-Developer'
 
     }
 ]

@@ -16,7 +16,8 @@ module.exports = {
         'ducky':"url('/src/assets/cardsImages/rubber-ducky.png')",
         'extension':"url('/src/assets/cardsImages/extension.jpg')",
         'pokemon':"url('/src/assets/cardsImages/pokemon.jpg')",
-        'countries':"url('/src/assets/cardsImages/countries.jpg')"
+        'countries':"url('/src/assets/cardsImages/countries.jpg')",
+        'gea':"url('/src/assets/cardsImages/gea.png')",
       },
       fontFamily:{
         ubuntu:['Poppins', 'sans-serif']

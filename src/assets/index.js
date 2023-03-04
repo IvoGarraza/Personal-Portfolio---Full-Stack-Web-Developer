@@ -19,6 +19,8 @@ import node from './node.png'
 import python from './python.png'
 import arduino from './arduino.png'
 import info from './info.png'
+import framer from './framer.png'
+import hoobank from './hoobank.png'
 
 export {
     react,
@@ -40,5 +42,7 @@ export {
     node,
     python,
     arduino,
-    info
+    info,
+    framer,
+    hoobank
 }

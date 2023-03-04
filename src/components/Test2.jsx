@@ -5,6 +5,7 @@ import Modal from "./animation-resorces/modal";
 import { stableDifussion } from "../assets/stable-difussion";
 import move from "lodash-move";
 
+
 /* const Test2 = () => {
   const [isOpen, setOpen] = useState("false");
   const images = stableDifussion
@@ -24,39 +25,43 @@ import move from "lodash-move";
   );
 }; */
 
-const CARD_COLORS = ["#266678", "#cb7c7a", " #36a18b", "#cda35f", "#747474"];
-const CARD_OFFSET = 10;
+const CARD_OFFSET = 5;
 const SCALE_FACTOR = 0.06;
 
+
 const CardStack = () => {
-  const [cards, setCards] = React.useState(CARD_COLORS);
+  const [cards, setCards] = useState(stableDifussion);
   const moveToEnd = from => {
     setCards(move(cards, from, cards.length - 1));
   };
 
   return (
-    <div className="w-[100%] h-[200px] bg-black" style={wrapperStyle}>
-      <ul className="bg-white w-[40%] h-[40%] relative" >
+    <div className="w-[100%] h-[100%]">
+      <ul className="w-[100%] h-[100%] relative" >
         {cards.map((color, index) => {
           const canDrag = index === 0;
 
           return (
-            <motion.li
+            <motion.img
+              src={color}
               key={color}
+              className="shadow-xl"
               style={{
                 ...cardStyle,
-                backgroundColor: color,
+                /* backgroundColor: color, */
                 cursor: canDrag ? "grab" : "auto"
               }}
               animate={{
                 top: index * -CARD_OFFSET,
                 scale: 1 - index * SCALE_FACTOR,
-                zIndex: CARD_COLORS.length - index
+                zIndex: stableDifussion.length - index
               }}
-              drag={canDrag ? "y" : false}
+              drag
               dragConstraints={{
-                top: 0,
-                bottom: 0
+                top: -1,
+                right: 1,
+                bottom: 1,
+                left: -1,
               }}
               onDragEnd={() => moveToEnd(index)}
             />
@@ -71,7 +76,7 @@ const wrapperStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  height: "100vh"
+  height: "400px"
 };
 
 const cardWrapStyle = {
@@ -82,8 +87,6 @@ const cardWrapStyle = {
 
 const cardStyle = {
   position: "absolute",
-  width: "350px",
-  height: "220px",
   borderRadius: "8px",
   transformOrigin: "top center",
   listStyle: "none"

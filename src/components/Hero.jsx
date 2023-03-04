@@ -4,6 +4,7 @@ import AOS from 'aos'
 import styles from '../constants/styles'
 import TextSpan from './animation-resorces/TextSpan'
 import { AnimatePresence, motion } from 'framer-motion'
+import CardStack from './Test2'
 
 const Hero = () => {
 
@@ -18,7 +19,7 @@ const Hero = () => {
   return (
     <div className='flex flex-col items-center justify-center bg-[#1B262C] h-[90vh] w-[100%]'>
       <div className='flex flex-row items-center justify-around w-[100%]'>
-        <div className='w-[70%] text-black '>
+        <div className='w-[70%] ml-[5%] text-black '>
           {/* <h2 className={`${styles.heading2}`}>Welcome to my personal portfolio! </h2>  */}
           {title.map((letter, index) => (
             <TextSpan key={index} size='text-5xl' weight='font-bold' color='text-white'>
@@ -43,10 +44,11 @@ const Hero = () => {
           ))}
 
         </div>
-        <motion.div className='w-[20%] mr-[5%] mb-[1%]' initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1 }}>
-          <motion.div className='bg-white absolute w-[300px] h-[370px] mt-[25px] ml-[20px] z-0 rounded-xl' initial={{ x: -20, y: -20 }} animate={{ x: 0, y: 0 }} transition={{ delay: 1, duration: 1 }}></motion.div>
+        <motion.div className='w-[20%] h-[100%] mr-[5%] mb-[5%]' initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1 }}>
+  {/*         <motion.div className='bg-white absolute w-[300px] h-[370px] mt-[25px] ml-[20px] z-0 rounded-xl' initial={{ x: -20, y: -20 }} animate={{ x: 0, y: 0 }} transition={{ delay: 1, duration: 1 }}></motion.div>
           <motion.div className='bg-slate-400 absolute w-[300px] h-[370px] mt-[15px] ml-[10px] z-0 rounded-xl' initial={{ x: -10, y: -15 }} animate={{ x: 0, y: 0 }} transition={{ delay: 1, duration: 0.5 }}></motion.div>
-          <img src={avatar} className='w-[300px] relative z-40 rounded-xl' />
+          <img src={avatar} className='w-[300px] relative z-40 rounded-xl' /> */}
+          <CardStack></CardStack>
         </motion.div>
       </div>
       <motion.div className='absolute mt-[500px] mr-[-1400px]' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
@@ -71,7 +73,7 @@ const Hero = () => {
               </motion.div> */
               
               <motion.div className='w-[200px] h-[100px] bg-slate-700 absolute ml-[-200px] flex items-center text-center rounded-xl' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.1}} exit={{opacity:0}}>
-                <span className='text-white m-4'>Retrato hecho con <a className='font-bold' href='https://stablediffusionweb.com/'>Stable Diffusion</a></span>
+                <span className='text-white m-4'>Retratos hechos con <a className='font-bold' href='https://stablediffusionweb.com/'>Stable Diffusion</a></span>
                 <button className='text-white  absolute mt-[-40%] ml-[90%]' onClick={() => setOpen(prevValue => !prevValue)}>x</button>
                 <div className='bg-slate-700 w-[20px] h-[20px] absolute items-center ml-[95%] rotate-45' ></div>
               </motion.div>
