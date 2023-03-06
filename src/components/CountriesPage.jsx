@@ -38,6 +38,8 @@ const CountriesPage = () => {
                     <a href='https://github.com/IvoGarraza/CountriesPage-IndividualProyect' className='border-white border-[1px]  rounded-[5px] w-[20%] p-2  text-white hover:text-black hover:bg-white hover:border-black'>Link de Github</a>
                 </div>
             </div>
+            <br/>
+            <br/>
         </div>
     )
 }

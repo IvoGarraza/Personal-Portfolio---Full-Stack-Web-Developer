@@ -9,6 +9,8 @@ import Card from './components/Test';
 import Test2 from './components/Test2';
 import CountriesPage from './components/CountriesPage';
 import Bank from './components/Bank';
+import Gea from './components/Gea';
+import RubberDucky from './components/RubberDucky';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +21,8 @@ root.render(
         <Route path='/pokemon-page' element={<Pokemon></Pokemon>}></Route>
         <Route path='/countries-page' element={<CountriesPage></CountriesPage>}></Route>
         <Route path='/bank' element={<Bank></Bank>}></Route>
+        <Route path='/gea-web' element={<Gea></Gea>}></Route>
+        <Route path='/rubber-ducky-with-arduino' element={<RubberDucky/>}></Route>
         <Route path='/test' element={<Card></Card>}></Route>
         <Route path='/test2' element={<Test2></Test2>}></Route>
       </Routes>

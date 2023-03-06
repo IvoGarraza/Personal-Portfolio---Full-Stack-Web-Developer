@@ -84,7 +84,7 @@ export const projects = [
         img:'bg-pokemon',
         avatar:foto,
         time:'18/01/2023',
-        path:'/pokemon-page'
+        link:'https://github.com/IvoGarraza/Pokemon_Page_IndividualProyect'
 
     },
     {
@@ -123,7 +123,7 @@ export const projects = [
         path:'/rubber-ducky-with-arduino'
 
     },
-    {
+/*     {
         id:'extension',
         title: 'Chrome extension - Detector de vulnerabilidades SQL Injection',
         description:'Extension de Google Chrome para detectar si un sitio web es vulnerable a ataques SQL Injection',
@@ -141,12 +141,12 @@ export const projects = [
         avatar:foto,
         time:'05/08/2022',
         path:'/chrome-extension-darkmode'
-    },
+    }, */
     {
         id:'portfolio',
         title: 'Portfolio Web Developer',
         description:'Aca vas a poder encontrar el codigo de este mismo portafolio creado con React, TailwindCSS y Framer Motion',
-        img:imgCard,
+        img:'bg-portafolio',
         avatar:foto,
         time:'18/01/2022',
         link:'https://github.com/IvoGarraza/Personal-Portfolio---Full-Stack-Web-Developer'
