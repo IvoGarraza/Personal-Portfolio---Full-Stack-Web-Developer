@@ -18,7 +18,8 @@ module.exports = {
         'pokemon':"url('/src/assets/cardsImages/pokemon.jpg')",
         'countries':"url('/src/assets/cardsImages/countries.jpg')",
         'gea':"url('/src/assets/cardsImages/gea.png')",
-        'portafolio':"url('/src/assets/cardsImages/portafolio2.png')"
+        'portafolio':"url('/src/assets/cardsImages/portafolio2.png')",
+        'torralba': "url('/src/assets/cardsImages/torralba.jpg')"
       },
       fontFamily:{
         ubuntu:['Poppins', 'sans-serif']

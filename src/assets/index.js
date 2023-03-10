@@ -21,6 +21,7 @@ import arduino from './arduino.png'
 import info from './info.png'
 import framer from './framer.png'
 import hoobank from './hoobank.png'
+import postgres from './postgres.png'
 
 export {
     react,
@@ -44,5 +45,6 @@ export {
     arduino,
     info,
     framer,
-    hoobank
+    hoobank,
+    postgres
 }

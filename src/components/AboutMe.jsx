@@ -24,7 +24,7 @@ const AboutMe = () => {
       <div className='w-[60%] items-center justify-center text-center flex flex-col text-xl'>
         <h2 className='font-bold my-5 text-white'>Sobre mi...</h2>
         <p className='font-medium w-[80%] text-slate-300'>Estudiante de la Universidad  Tecnologica  Nacional  -  Facultad Regional Córdoba y Desarrolador Web Fullstack,<br /> apasionado por la tecnologia, el diseño y el  aprendizaje  para  el  desarrollo  personal  y profesional.<br /> Me gusta participar en proyectos donde los desafios intelectuales, el trabajo en equipo y las ganas sean fundamentales</p>
-        <a href='https://drive.google.com/file/d/1pUbGolzZZQS_9Q6nm61flV2lW8Y_CwHm/view?usp=sharing' className='border-white border-[1px] bg-slate-700 rounded-[5px] w-[30%] p-2 mt-6 text-white hover:text-black hover:bg-white hover:border-black'>Curriculum vitae</a>
+        <a href='https://drive.google.com/file/d/1exQ8sjm0OKiWnTMz-dKRRhu6gIrstXzT/view?usp=sharing' className='border-white border-[1px] bg-slate-700 rounded-[5px] w-[30%] p-2 mt-6 text-white hover:text-black hover:bg-white hover:border-black'>Curriculum vitae</a>
       </div>
       <div className='flex flex-col justify-center items-center mr-[10%]'>
         <h2 className='font-bold text-white m-5' >INTERESES Y HOBBIES</h2>

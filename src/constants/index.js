@@ -1,4 +1,4 @@
-import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino, framer} from '../assets'
+import {react, aftereffects, javascript, photoshop, mysql,css, tailwind, html,vegas, avatar, imgCard, foto, mail, wsp, github, git, node, python, arduino, framer, postgres} from '../assets'
 import { games, hardware, machineLearning, musica } from '../assets/svg'
 
 export const skills = [
@@ -44,10 +44,10 @@ export const skills = [
         color:'border-b-[#009BE6]'
     },
     {
-        id:"mysql",
-        title: "MySQL",
-        img:mysql,
-        color:'border-b-[#E08900]'
+        id:"postgres",
+        title: "PostgreSQL",
+        img:postgres,
+        color:'border-b-[#0A67C9]'
     },
     {
         id:'python',
@@ -122,6 +122,13 @@ export const projects = [
         time:'17/07/2022',
         path:'/rubber-ducky-with-arduino'
 
+    },
+    {
+        id:'analisis',
+        title:'Analisis de sistema - Torralba Refrigeracion S.R.L',
+        description: 'Analisis de sistema realizado para la Torralba Refrigeracion, este documento fue confeccionado durante el periodo laboral en la empresa para poder describir las diferentes areas de la organizacion y como se relacionan sus partes y la informacion de las mismas',
+        img:'bg-torralba',
+        link:'https://docs.google.com/document/d/16qE0waJmuFylFn2RmMvKpvTzNVx0AUmQ-G9W_-G05Xg/edit?usp=sharing'
     },
 /*     {
         id:'extension',
