@@ -9,10 +9,9 @@ const Card = (props) => {
 
   return (
     
-    <motion.div className={`border-2 bg-white border-b-4 ${!props.color ? 'border-b-[#00ADB5]' : props.color} rounded-xl flex flex-col items-center justify-between content-center justify-self-center p-5 w-[225px] h-[225px] grayscale hover:grayscale-0 shadow-md cursor-pointer`} data-aos='fade-up'>
-        {/* div invisible para centrar imagen con justify-content: space-between */}
+    <motion.div className={`border-2 bg-white border-b-4 ${!props.color ? 'border-b-[#00ADB5]' : props.color} rounded-xl flex flex-col items-center justify-between content-center justify-self-center sm:p-5 p-3  sm:w-[225px] sm:h-[225px] h-[100%] w-[100%] grayscale hover:grayscale-0 shadow-md cursor-pointer`} data-aos='fade-up'>
         <div></div>
-        <img src={props.img} className='w-[128px] '/>
+        <img src={props.img} className='sm:w-[128px] w-[40%]'/>
         <h2>{props.title}</h2>
     </motion.div>
   )

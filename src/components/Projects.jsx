@@ -8,7 +8,7 @@ import Card from "./Test";
 
 const Projects = () => {
   return (
-    <div id='projects' className="bg-port__black py-10 w-[100%] h-[60%] pb-[300px] flex flex-col">
+    <div id='projects' className="bg-port__black py-10 w-[100%] sm:h-[60%] h-[4000px] pb-[300px] flex flex-col">
       <div className=" p-10  mt-2 h-[20%] w-[100%%] items-center flex flex-col justify-center">
         <p className={`${styles.heading2} text-center font-ubuntu`}>
           Conoce mis proyectos personales y<br />

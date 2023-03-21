@@ -6,20 +6,20 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <section id="contact" className="w-[100%] flex flex-col items-center font-ubuntu">
-      <div className="flex flex-row justify-around w-[100%] bg-slate-20 my-20 rounded-xl ">
+      <div className="flex sm:flex-row flex-col-reverse justify-around w-[100%] bg-slate-20 sm:my-20 rounded-xl ">
         <div className="flex flex-col justify-around">
           <div></div>
           <div className="m-10 flex justify-center">
             <h2 className="text-[30px] font-bold">Redes para contactarme...</h2>
           </div>
-          <div className="flex flex-row m-2 justify-between ">
+          <div className="flex sm:flex-row flex-col m-2 sm:justify-between justify-center items-center ">
             {contact.map((red) => (
               <a href={red.link}>
                 <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
-                  className="flex flex-col justify-between w-[150px] h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
+                  className="flex flex-col justify-between sm:w-[150px] w-[80%] sm:h-[150px] m-5 p-5 bg-slate-200 rounded-xl opacity-50 hover:opacity-100">
                   <div></div>
                   <div className="flex justify-center ">
-                    <img className="flex w-[48px] h-[48px]" src={red.img} />
+                    <img className="flex sm:w-[48px] sm:h-[48px] w-[20%]" src={red.img} />
                   </div>
                   <h3 className="flex text-[20px] text-black font-bold justify-center">
                     {red.title}
