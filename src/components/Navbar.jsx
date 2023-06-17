@@ -1,39 +1,35 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Buttons from './Buttons'
 import { motion } from 'framer-motion'
 import close from '../assets/close.svg'
 import menu from '../assets/menu.svg'
 
 
-const svgVariants = {
-  hidden: { rotate: -90 },
-  visible: {
-    rotate: 0,
-    transition: { duration: 1 }
-  }
-}
-
-const pathVariants = {
-  hidden: {
-    opacity: 0,
-    pathLength: 0,
-    fill: "white"
-  },
-  visible: {
-    opacity: 1,
-    pathLength: 1,
-    fill: "white",
-    transition: { duration: 2, ease: "easeIn" }
-  }
-}
 const transition = { duration: 4, yoyo: Infinity, ease: "easeInOut" };
 
+const animation={
 
+}
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='bg-port__black'>
+    <div className={`bg-port__black fixed w-full z-10 ${isScrolled ? 'top-0' : ''}`}>
       <div className='flex flex-row w-[100%] sm:m-[-2px] h-100 align-center justify-between bg-port__black  border-b-black shadow-xl'>
         <div className='flex items-center  w-[100%]'>
           <motion.svg className="m-5 font-ubuntu" initial={{ x: -100 }} animate={{ x: 0 }} transition={{ duration: 1 }} width="36" height="28" viewBox="0 0 36 28" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +41,9 @@ const Navbar = () => {
         </div>
         <motion.div initial={{x:400}} animate={{x:0}} transition={{duration:1}} className={`m-5 mr-1 sm:flex hidden flex-row`} >
           <Buttons title='About me' id='orange'></Buttons>
-          <a href='#projects'>
+          <Buttons title='Projects'></Buttons>
+          <Buttons title='Contact'></Buttons>
+{/*           <a href='#projects'>
             <button href="#projects" class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-xl  bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">Projects</span>
@@ -56,7 +54,7 @@ const Navbar = () => {
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>
               <span class="relative text-white group-hover:text-white">Contact</span>
             </button>
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </div>
