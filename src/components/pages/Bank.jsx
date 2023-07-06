@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { hoobank } from "../assets";
+import { hoobank } from "../../assets";
 
 const Bank = () => {
   return (

@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Pokemon from './components/Pokemon.jsx'
-import Card from './components/Test';
-import Test2 from './components/Test2';
-import CountriesPage from './components/CountriesPage';
-import Bank from './components/Bank';
-import Gea from './components/Gea';
-import RubberDucky from './components/RubberDucky';
+import Pokemon from './components/pages/Pokemon.jsx'
+import Card from './components/elements/carrousel/Test';
+import CountriesPage from './components/pages/CountriesPage';
+import Bank from './components/pages/Bank';
+import Gea from './components/pages/Gea';
+import RubberDucky from './components/pages/RubberDucky';
+import FramerModal from './components/elements/carrousel/Test2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +24,7 @@ root.render(
         <Route path='/gea-web' element={<Gea></Gea>}></Route>
         <Route path='/rubber-ducky-with-arduino' element={<RubberDucky/>}></Route>
         <Route path='/test' element={<Card></Card>}></Route>
-        <Route path='/test2' element={<Test2></Test2>}></Route>
+        <Route path='/test2' element={<FramerModal></FramerModal>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

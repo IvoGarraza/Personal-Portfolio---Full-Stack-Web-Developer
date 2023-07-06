@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { skills } from "../constants";
-import Card from "./Cards";
+import { skills } from "../../constants";
+import Card from "../elements/cards/Cards";
 import AOS from "aos";
 import { motion, useScroll } from "framer-motion";
 

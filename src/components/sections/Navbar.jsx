@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Buttons from './Buttons'
+import Buttons from '../elements/buttons/Buttons'
 import { motion } from 'framer-motion'
-import close from '../assets/close.svg'
-import menu from '../assets/menu.svg'
+import close from '../../assets/close.svg'
+import menu from '../../assets/menu.svg'
 
 
 const transition = { duration: 4, yoyo: Infinity, ease: "easeInOut" };
@@ -40,9 +40,9 @@ const Navbar = () => {
           <img src={toggle ? close : menu} className='w-10' onClick={()=> setToggle(!toggle)}></img>
         </div>
         <motion.div initial={{x:400}} animate={{x:0}} transition={{duration:1}} className={`m-5 mr-1 sm:flex hidden flex-row`} >
-          <Buttons title='About me' id='orange'></Buttons>
-          <Buttons title='Projects'></Buttons>
-          <Buttons title='Contact'></Buttons>
+          <Buttons href='#aboutme' title='About me' id='orange'></Buttons>
+          <Buttons href='#projects' title='Projects'></Buttons>
+          <Buttons href='#contact' title='Contact'></Buttons>
 {/*           <a href='#projects'>
             <button href="#projects" class="group relative mr-5 h-10 w-[100px] overflow-hidden rounded-xl  bg-port__gray text-lg shadow">
               <div class="absolute inset-0 w-0 bg-port__blue transition-all duration-[250ms] ease-out group-hover:w-full"></div>

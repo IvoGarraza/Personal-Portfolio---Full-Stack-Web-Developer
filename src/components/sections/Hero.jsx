@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { avatar, foto } from '../assets'
+import { avatar, foto } from '../../assets'
 import AOS from 'aos'
-import styles from '../constants/styles'
-import TextSpan from './animation-resorces/TextSpan'
+import styles from '../../constants/styles'
+import TextSpan from '../animation-resorces/TextSpan'
 import { AnimatePresence, motion } from 'framer-motion'
-import CardStack from './Test2'
+import CardStack from '../elements/carrousel/Test2'
 
 const Hero = () => {
 

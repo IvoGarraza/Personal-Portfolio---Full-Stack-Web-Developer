@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import ducky from '../assets/cardsImages/rubber-ducky.png' 
-import arduino  from "../assets/cardsImages/arduino.png";
+import ducky from '../../assets/cardsImages/rubber-ducky.png' 
+import arduino  from "../../assets/cardsImages/arduino.png";
 
 const RubberDucky = () => {
   return (

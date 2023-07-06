@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "../constants/styles";
-import { projects } from "../constants";
-import CardProject from "./CardProject";
+import styles from "../../constants/styles";
+import { projects } from "../../constants";
+import CardProject from "../elements/cards/CardProject";
 import { Link } from "react-router-dom";
-import Card from "./Test";
+import Card from "../elements/carrousel/Test";
 
 
 const Projects = () => {

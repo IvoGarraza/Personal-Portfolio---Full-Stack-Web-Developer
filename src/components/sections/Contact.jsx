@@ -1,6 +1,6 @@
 import React from "react";
-import { contact } from "../constants";
-import styles from "../constants/styles";
+import { contact } from "../../constants";
+import styles from "../../constants/styles";
 import { motion } from "framer-motion";
 
 const Contact = () => {

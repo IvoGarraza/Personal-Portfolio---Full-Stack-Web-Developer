@@ -1,32 +1,47 @@
-import React from 'react'
-import { motion } from 'framer-motion';
 
+import { motion } from "framer-motion";
+import Backdrop from "./backdrop";
 
+const dropIn = {
+    hidden: {
+      y: "-100vh",
+      opacity: 0,
+    },
+    visible: {
+      y: "0",
+      opacity: 1,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+    exit: {
+      y: "100vh",
+      opacity: 0,
+    },
+  };
+  
 
-const Modal = (props) => {
+const Modal = ({ handleClose, text }) => {
 
-  return (
-    <motion.div className='w-[100%] h-[100%] bg-gray-500 fixed'
-    initial={{
-      opacity:0
-    }}
-    animate={{
-      opacity:1
-    }}>
-          <motion.div className='fixed w-[500px] h-[300px] bg-white m-auto inset-0 p-6 rounded-2xl'
-          initial={{
-            scale:0
-          }}
-          animate={{
-            scale:1
-          }}>
-            <motion.div className=''>
-              <p>{props.children}</p>
-              <button onClick={props.handleClose} className='text-red-500'>X</button>
-            </motion.div>
+    return (
+      <Backdrop  onClick={handleClose}>
+          <motion.div
+            onClick={(e) => e.stopPropagation()}  
+            className="modal  orange-gradient bg-white p-4 rounded-md w-[80%] h-[90%]"
+            variants={dropIn}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+          >
+            <p>{text}</p>
+            <button onClick={handleClose} className="bg-red-500 p-2 rounded-md text-white">Close</button>
           </motion.div>
-    </motion.div>
-  )
-}
+      </Backdrop>
+    );
+  };
 
-export default Modal
+  
+  export default Modal;

@@ -14,9 +14,9 @@ const Buttons = (props) => {
                 </a>
             </div> */
             <div className='flex items-center justify-center  mr-2'>
-                <a href='#aboutme'>
+                <a href={props.href}>
                     <button className='group relative w-24 h-8'>
-                        <div className='absolute h-0 inset-0 bg-orange-500 ease-out transition-all mt-[-22px] group-hover:h-[250%] transform skew-x-12'></div>
+                        <div class='custom-shape absolute h-0 inset-0 bg-purple-500 ease-out transition-all mt-[-22px] group-hover:h-[250%] '></div>
                         <span className='relative text-white'>{props.title}</span>
                     </button>
                 </a>

@@ -12,7 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
-
+.custom-shape {
+  clip-path: polygon(0 0, 51% 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

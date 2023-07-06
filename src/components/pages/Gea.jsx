@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import gea from "../assets/cardsImages/gea.png";
+import gea from "../../assets/cardsImages/gea.png";
 
 const Gea = () => {
   return (

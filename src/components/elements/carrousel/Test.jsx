@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, animate } from "framer-motion";
-import { projects } from "../constants";
+import { projects } from "../../../constants";
 import { Link } from "react-router-dom";
+import FramerModal from "../buttons/FramerModal";
 
 const Card = (props) => {
 
@@ -15,6 +16,8 @@ const Card = (props) => {
           initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.2, delay: 0.1 }}>{props.title}</motion.h2>
           )}
         <button className="sm:hidden p-2 bg-slate-500 rounded-xl" onClick={()=> setOpen(true)}>Ver</button>
+        
+        
       <AnimatePresence>
         {isOpen && (
           <motion.div className="absolute p-4 h-[450px] sm:w-[24%] w-[96%] flex flex-col items-center justify-center text-white bg-port__gray  rounded-xl font-ubuntu"
@@ -24,7 +27,7 @@ const Card = (props) => {
               {props.description}
             </p>
             {props.link ? <a href={props.link} className='bg-purple-500 p-2 mt-5 w-[30%] rounded-lg text-white hover:bg-slate-300 hover:text-black'>Link</a> : <Link to={props.path}><button className="bg-purple-500 p-2 mt-5 rounded-lg text-white hover:bg-slate-300 hover:text-black">Ver mas</button></Link>}
-            
+            <FramerModal></FramerModal>
             
           </motion.div>
         )}

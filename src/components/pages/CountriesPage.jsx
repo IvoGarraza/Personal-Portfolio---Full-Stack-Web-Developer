@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import countries from '../assets/countries.jpg'
+import countries from '../../assets/countries.jpg'
 
 const CountriesPage = () => {
     return (
