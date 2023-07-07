@@ -80,6 +80,7 @@ export const projects = [
     {
         id:'pokemon',
         title:'Pokemon Page',
+        type:'FullStack Project',
         description:'A popular project site whit a all pokemons exist for now, this projects was realice in a bootcamp of web developer. In this project made a API REST & Front',
         img:'bg-pokemon',
         avatar:foto,
@@ -90,6 +91,7 @@ export const projects = [
     {
         id:'countries',
         title:'Countries Page',
+        type:'FullStack Project',
         description: 'Sitio web con todos los paises y descripciones de los mismos, realizado en el bootcamp de desarrollador web. En este proyecto se contruyo una API REST con node.js, para luego ser consumida y construir el frontend con React.js',
         path:'/countries-page',
         img:'bg-countries'
@@ -97,6 +99,7 @@ export const projects = [
     {
         id:'hoobank',
         title: 'Modern Website with TailwindCSS',
+        type:'FrontEnd Project',
         description:'Sitio Web simulando ser la página de un banco. Programada con React.js y usando TailwindCSS, un framework para estilos de CSS',
         img:'bg-hoobank',
         avatar:foto,

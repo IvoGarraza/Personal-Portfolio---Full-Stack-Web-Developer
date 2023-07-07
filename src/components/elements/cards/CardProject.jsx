@@ -3,16 +3,6 @@ import { Link } from 'react-router-dom'
 
 const CardProject = (props) => {
   return (
-/*     <div className='flex flex-row w-[600px] h-[120px] items-center justify-between m-2 rounded-xl bg-sky-500/10'>
-        <div className='flex-start w-[20%] h-[80px]'>
-            <img className='' src={props.img}/>
-        </div>
-        <div className='text-center text-sm w-[80%] m-1 p-1'>
-            <h3 className='text-white font-bold'>{props.title}</h3>
-            <p className='text-[#a6a6a6]'>{props.description}</p>
-        </div>
-        <div></div>
-    </div> */
     <div class="p-4 items-center justify-center w-[650px] h-[200px] m-4 rounded-xl group sm:flex space-x-6 bg-white bg-opacity-50 shadow-xl hover:rounded-2xl">
 		<img  class="mx-auto  block w-4/12 h-40 rounded-lg"  alt="art cover" loading="lazy" src={props.img} />
 		<div class="sm:w-8/12 pl-0 p-5">

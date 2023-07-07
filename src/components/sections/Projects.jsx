@@ -4,6 +4,8 @@ import { projects } from "../../constants";
 import CardProject from "../elements/cards/CardProject";
 import { Link } from "react-router-dom";
 import Card from "../elements/carrousel/Test";
+import FramerModal from "../elements/buttons/FramerModal";
+
 
 
 const Projects = () => {
@@ -21,6 +23,7 @@ const Projects = () => {
             <Card title={project.title} description={project.description} id={project.img} img={project.img} path={project.path} link={project.link}></Card>
           ))}
         </div>
+        <FramerModal></FramerModal>
       </div>
     </div>
   );

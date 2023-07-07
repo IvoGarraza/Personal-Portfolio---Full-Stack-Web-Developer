@@ -57,7 +57,7 @@ const AboutMe = () => {
           {/* <a href='https://drive.google.com/file/d/1exQ8sjm0OKiWnTMz-dKRRhu6gIrstXzT/view?usp=sharing' className='border-white border-[1px] bg-slate-700 rounded-[5px] sm:w-[30%] p-2 mt-6 text-white hover:text-black hover:bg-white hover:border-black'>Curriculum vitae</a> */}
           <a
             href="https://drive.google.com/file/d/1exQ8sjm0OKiWnTMz-dKRRhu6gIrstXzT/view?usp=sharing"
-            class="relative px-5 my-2 py-2 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group"
+            class="relative px-5 mt-6 py-2 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group"
           >
             <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
             <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
