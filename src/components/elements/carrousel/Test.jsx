@@ -27,12 +27,12 @@ const Card = (props) => {
               {props.description}
             </p>
             {props.link ? <a href={props.link} className='bg-purple-500 p-2 mt-5 w-[30%] rounded-lg text-white hover:bg-slate-300 hover:text-black'>Link</a> : <Link to={props.path}><button className="bg-purple-500 p-2 mt-5 rounded-lg text-white hover:bg-slate-300 hover:text-black">Ver mas</button></Link>}
-            <FramerModal></FramerModal>
+            
             
           </motion.div>
         )}
       </AnimatePresence>
-
+      <FramerModal></FramerModal>
     </motion.div>
 
 
